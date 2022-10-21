@@ -2,8 +2,7 @@ from tensorflow import keras
 from tensorflow.keras import backend as K
 import numpy as np
 import matplotlib.pyplot as plt
-import pandas as pd
-
+import matplotlib
 class ExponentialLearningRate(keras.callbacks.Callback):
     """exponential learning rate scheduler used to find the optimal zone of learning rate.
     """    
