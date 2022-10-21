@@ -2,6 +2,7 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 from os import listdir
+import numpy as np
 from os.path import join, isfile
 import cv2
 
