@@ -5,7 +5,7 @@ from tensorflow.keras import backend as K
 from PIL import Image
 import numpy as np
 import os
-
+import pandas as pd
 def inference(model_path, test_data_path):
     """inference using our best model: ks=5, kr=3, filters=64, lr=0.02
 
