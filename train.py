@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 from data_extraction import data_extraction
 from utils import save_history
-
+import numpy as np
 import os
 
 def train(base_name, model, train_data_path, val_data_path, batchs_size, epochs, early_stopping):
