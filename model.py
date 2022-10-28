@@ -3,7 +3,7 @@ from tensorflow import keras
 from tensorflow.keras.layers import Input, Conv2D, Conv2DTranspose, Concatenate, Add, BatchNormalization, LeakyReLU
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import Model
-
+import numpy as np
 def conv2dbase(x, filters=96, kernel_size=3, strides=1, padding='same', alpha=0.2):
     """implementing of the base convolution: conv2d -> batchnorm -> LeakyRELU.
 
