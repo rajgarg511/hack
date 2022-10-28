@@ -43,20 +43,6 @@ def find_learning_rate(model, X, y, epochs=1, batch_size=2, min_rate=10**-5, max
     model.set_weights(init_weights)
     return exp_lr.rates, exp_lr.losses
 
-def plot_lr_vs_loss(rates, losses):
-    """plot the learning rate in the function of losses.
-
-    Args:
-        rates ([list]): list of learning rate.
-        losses ([list]): list of losses.
-    """    
-    plt.plot(rates, losses)
-    plt.gca().set_xscale('log')
-    plt.hlines(min(losses), min(rates), max(rates))
-    plt.axis([min(rates), max(rates), min(losses), (losses[0] + min(losses)) / 2])
-    plt.xlabel("Learning rate")
-    plt.ylabel("Loss")
-    plt.savefig("optimal_lr.png")
 
 def save_history(base_name, history):
     """save training history
